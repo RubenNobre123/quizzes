@@ -16,7 +16,7 @@ export default {
         resolve(evt) {
             if (this.done)
                 return
-            if (evt.srcElement.__vnode.children == this.answer)
+            if (evt.target.children == this.answer)
                  evt.target.parentElement.classList.add("correct")
             else {
                 evt.target.parentElement.classList.add("wrong")
